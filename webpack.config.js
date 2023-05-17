@@ -8,13 +8,13 @@ mode: 'development',
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output Management',
-      filename: 'index.html'
+      title: 'Project',
+      template: './src/index.ejs'
     }),
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist'),
   },
   module: {
     rules: [
