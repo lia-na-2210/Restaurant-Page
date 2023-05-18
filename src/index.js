@@ -1,8 +1,2 @@
 import './style.css';
-
-
-const title = document.createElement('div');
-title.classList.add('.title');
-title.innerText = 'hello world!';
-
-document.body.appendChild(title);
+import tea1 from './images/tea-1.jpg'

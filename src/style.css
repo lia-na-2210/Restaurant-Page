@@ -1,4 +1,24 @@
 body {
-    font-size: 80px;
-    color: blueviolet;
+    background-color: #063103;
+    
+}
+
+#content {
+    background-color:  #E6E8FF;
+    color: #063103;
+    margin: 40px 60px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 800px;
 }
