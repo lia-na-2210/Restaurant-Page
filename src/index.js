@@ -1,2 +1,9 @@
 import './style.css';
-import tea1 from './images/tea-1.jpg'
+import printMe from './menu.js'
+const content = document.getElementById('content');
+
+const btn = document.createElement('button');
+btn.innerHTML = 'TU TU TU TUTTU';
+btn.onclick = printMe;
+
+content.appendChild(btn);
