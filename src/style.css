@@ -22,3 +22,8 @@ button {
     width: 100px;
     height: 70px;
 }
+
+img {
+    width: 350px;
+    height: auto;
+}

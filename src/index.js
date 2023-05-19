@@ -1,21 +1,35 @@
 import './style.css';
-import menuLoad from './menu.js'
-// import homeLoad from './home.js'
-import { btnHome, logoArea, diagram, diagram } from './home.js'
+import { btnMenu, item1 } from './menu.js'
+import { btnHome, logoArea, diagram } from './home.js'
 import contactLoad from './contact.js'
 
 const content = document.getElementById('content');
 
 const homeBtn = btnHome;
-const logo = logoArea;
-const teaDiagram = diagram;
-const menuBtn = menuLoad();
+const menuBtn = btnMenu;
 const contactBtn = contactLoad();
 content.appendChild(homeBtn);
 content.appendChild(menuBtn);
 content.appendChild(contactBtn);
-content.appendChild(logo);
-content.appendChild(teaDiagram);
+const menuContent = document.createElement('div');
+menuContent.style.display = 'none'
+const homeContent = document.createElement('div');
+content.appendChild(homeContent);
+
+homeBtn.addEventListener('click', () => {
+    const logo = logoArea;
+    const teaDiagram = diagram;
+    homeContent.appendChild(logo);
+    homeContent.appendChild(teaDiagram);
+})
+
+menuBtn.addEventListener('click',() => {
+    homeContent.style.display = 'none';
+    menuContent.style.display = 'block';
+    const firstItem = item1;
+    content.appendChild(menuContent);
+    menuContent.appendChild(firstItem);
+} )
 
 
 

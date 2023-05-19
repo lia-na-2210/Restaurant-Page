@@ -1,8 +1,9 @@
 import './style.css';
 
-export default function homeLoad () {
-    const btn = document.createElement('button');
-    btn.innerHTML = 'Menu';
 
-    return btn;
-}
+export const btnMenu = document.createElement('button');
+btnMenu.innerHTML = 'Menu';
+
+export const item1 = document.createElement('img');
+item1.src = './images/pexels-amar-preciado-8911656.jpg';
+
