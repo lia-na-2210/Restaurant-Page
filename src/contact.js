@@ -1,8 +1,8 @@
 import './style.css';
 
-export default function homeLoad () {
+export default function contactLoad () {
     const btn = document.createElement('button');
-    btn.innerHTML = 'Menu';
+    btn.innerHTML = 'Contact US';
 
     return btn;
 }

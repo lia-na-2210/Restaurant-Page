@@ -1,9 +1,21 @@
 import './style.css';
-import printMe from './menu.js'
+import menuLoad from './menu.js'
+// import homeLoad from './home.js'
+import { btnHome, logoArea, diagram, diagram } from './home.js'
+import contactLoad from './contact.js'
+
 const content = document.getElementById('content');
 
-const btn = document.createElement('button');
-btn.innerHTML = 'TU TU TU TUTTU';
-btn.onclick = printMe;
+const homeBtn = btnHome;
+const logo = logoArea;
+const teaDiagram = diagram;
+const menuBtn = menuLoad();
+const contactBtn = contactLoad();
+content.appendChild(homeBtn);
+content.appendChild(menuBtn);
+content.appendChild(contactBtn);
+content.appendChild(logo);
+content.appendChild(teaDiagram);
 
-content.appendChild(btn);
+
+
